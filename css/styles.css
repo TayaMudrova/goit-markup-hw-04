@@ -58,6 +58,19 @@ img {
   padding: 94px 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* Header */
 
 .header {
@@ -140,8 +153,13 @@ img {
 /* Hero-section */
 .hero-section {
   padding: 200px 0;
+  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/hero_img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 .hero-title {
   color: var(--main-white);
   font-size: 44px;
@@ -174,20 +192,6 @@ img {
 }
 
 /* Features-section */
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .features {
   display: flex;
   justify-content: center;
@@ -284,7 +288,21 @@ img {
   text-align: center;
 }
 
+.social-item {
+}
+
+.social-link {
+}
+
 /* Clients-section  */
+.clients-list {
+}
+
+.clients-item {
+}
+
+.client-icon {
+}
 
 
 /* Portfolio */
