@@ -219,6 +219,7 @@ img {
 
 .feature-icon {
   background-color: var(--accent-light);
+  border-radius: 4px;
   width: 270px;
   height: 120px;
   display: flex;
@@ -307,7 +308,38 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-top: 10px;
+  margin-bottom: 16px;
   text-align: center;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  color: var(--icon-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.social-icon{
+  fill: currentColor;
+}
+
+.social-link:hover, .social-link:focus{
+  color: var(--main-white);
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 /* Clients-section  */
@@ -422,6 +454,8 @@ img {
   padding: 60px 0;
 }
 
+.footer-section{}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
@@ -443,7 +477,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.contacts-footer-address:hover {
+.contacts-footer-address:hover, .contacts-footer-address:focus {
   color: var(--accent-color);
 }
 
@@ -455,6 +489,12 @@ img {
   letter-spacing: 0.02em;
 }
 
-.contacts-footer:hover {
+.contacts-footer:hover, .contacts-footer:focus {
   color: var(--accent-color);
+}
+
+.join-section{
+  width: 206px;
+  height: 80px;
+  display: flex;
 }
