@@ -9,6 +9,7 @@
   --accent-grey: rgba(255, 255, 255, 0.6);
   --border-line-color: rgba(236, 236, 236, 1);
   --border-projects-line-color: #eeeeee;
+  --icon-color:#afb1b8;
 }
 
 body {
@@ -145,7 +146,7 @@ img {
   gap: 10px;
 }
 
-.contact-icon{
+.contact-icon {
   fill: currentColor;
 }
 
@@ -161,8 +162,11 @@ img {
 .hero-section {
   padding: 200px 0;
   max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../images/hero_img.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero_img.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -213,7 +217,7 @@ img {
   margin-right: 30px;
 }
 
-.feature-icon{
+.feature-icon {
   background-color: var(--accent-light);
   width: 270px;
   height: 120px;
@@ -306,22 +310,36 @@ img {
   text-align: center;
 }
 
-.social-item {
-}
-
-.social-link {
-}
-
 /* Clients-section  */
 .clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.client-icon-link {
+  color: var(--icon-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
 }
 
 .client-icon {
+  fill: currentColor;
 }
 
+.client-icon-link:hover, .client-icon-link:focus{
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
 
 /* Portfolio */
 .filtr-list {
