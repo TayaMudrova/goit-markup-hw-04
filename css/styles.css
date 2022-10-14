@@ -140,6 +140,13 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon{
+  fill: currentColor;
 }
 
 .contact-item:hover,
@@ -160,6 +167,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .hero-title {
   color: var(--main-white);
   font-size: 44px;
@@ -203,6 +211,16 @@ img {
 
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.feature-icon{
+  background-color: var(--accent-light);
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .features-title {
